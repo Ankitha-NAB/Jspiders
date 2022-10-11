@@ -6,17 +6,19 @@ public class PalindromeNor {
 		Scanner sc=new Scanner(System.in);
 		System.out.println("enter a number: ");
 		int n=sc.nextInt();
-		int org_str=n;
-		int rev=0;
+		int m=n;
+		int sum=0;
+		int rem=0;
 		while(n!=0) {
-			rev=rev*10+ n%10;
+			rem=n%10;
+			sum=sum*10+rem;
 			n=n/10;
 		}
-		if(org_str==rev) {
-			System.out.println(rev+" is a palindrome");
+		if(sum==m) {
+			System.out.println(m+" is a palindrome");
 		}
 		else {
-			System.out.println(rev+" is not palindrome");
+			System.out.println(m+" is not palindrome");
 		}
 }
 }

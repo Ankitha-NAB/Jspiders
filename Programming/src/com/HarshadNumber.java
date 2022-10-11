@@ -1,22 +1,24 @@
 package com;
 import java.util.Scanner;
 
-public class PrimeOrNot {
+public class HarshadNumber {
+
 	public static void main(String[] args) {
-		int count=0;
 		Scanner sc=new Scanner(System.in);
 		System.out.println("enter the number: ");
 		int n=sc.nextInt();
-		for(int i=1;i<=n;i++) {
-			if(n%i==0) {
-				count++;
-			}
+		int org_str=n,rem=0,sum=0;
+		while(n!=0) {
+			rem=n%10;
+			sum=sum+rem;
+			n=n/10;
 		}
-		if(count==2) {
-			System.out.println("prime number");
+		if(org_str%sum==0) {
+			System.out.println("yes");
 		}
 		else {
-			System.out.println("not a prime number");
+			System.out.println("no");
 		}
 	}
-}	
+
+}
