@@ -1,4 +1,4 @@
-package lib;
+package basics;
 
 //program after overriding toString()
 public class Person {

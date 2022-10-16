@@ -1,4 +1,4 @@
-package lib;
+package basics;
 
 //program without overriding toString()
 public class Student {

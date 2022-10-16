@@ -1,4 +1,4 @@
-package lib;
+package basics;
 
 public class Employee {
 	int id;

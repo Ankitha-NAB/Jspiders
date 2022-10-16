@@ -1,4 +1,4 @@
-package lib;
+package basics;
 
 public class Hotel {
 	String name;
