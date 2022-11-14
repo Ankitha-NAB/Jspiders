@@ -1,6 +1,13 @@
 package com;
 import java.util.Scanner;
 
+/* the sum of last 4 nors is prime then that is lucky nor otherwise unlucky
+ * the number should be more than 6 digits.
+ * number=1245314
+ * o/p =lucky nor
+ * explanation:5+3+1+4=13
+ */
+
 public class LuckyNor {
 
 	public static void main(String[] args) {

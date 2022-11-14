@@ -1,8 +1,8 @@
-package com;
+package basicprgms;
 import java.util.Scanner;
 
 public class ArmstrongNor {
-	static void armstrongNo(int n) {
+	static void armstrong(int n) {
 		int c=0,n1=n,rem=0,sum=0,n2=n;
 		while(n!=0) {
 			c++;
@@ -23,12 +23,13 @@ public class ArmstrongNor {
 		else {
 			System.out.println("not armstrong number");
 		}
+		
+		
 	}
-
-	public static void main(String[] args) {
-		Scanner sc=new Scanner(System.in);
-		int n=sc.nextInt();
-		armstrongNo(n);
-	}
-
+public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+	System.out.println("enter n:");
+	int n=sc.nextInt();
+	armstrong(n);
+}
 }

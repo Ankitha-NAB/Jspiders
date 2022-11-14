@@ -6,7 +6,7 @@ public class DuckNor {
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
 		int n=sc.nextInt();
-		int rem=0,c=0,prod=1;
+		int rem=0,prod=1;
 		while(n!=0) {
 			rem=n%10;
 			prod=prod*rem;

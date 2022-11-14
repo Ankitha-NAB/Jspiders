@@ -2,6 +2,12 @@ package arrays;
 import java.util.Scanner; 
 
 public class SumOfArray {
+	static void sumOfArrayEle(int sum,int[] a) {
+		for(int i=0;i<a.length;i++) {
+			sum+=a[i];
+		}
+		System.out.println(sum);
+	}
 public static void main(String[] args) {
 	int sum=0;
 	Scanner sc=new Scanner(System.in);
@@ -16,10 +22,6 @@ public static void main(String[] args) {
 	for(int i=0;i<a.length;i++) {
 		System.out.println(a[i]+" ");
 	}
-	System.out.println("---Sum of an array---");
-	for(int i=0;i<a.length;i++) {
-		sum+=a[i];
-	}
-	System.out.println(sum);
+	sumOfArrayEle(sum,a);
 }
 }
